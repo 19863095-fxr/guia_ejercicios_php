@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 25 - Datos de Usuario</title>
+    </head>
+    <body bgcolor='#292828' text='#FFFFFF'>
+
+        <h1>Complejo Educativo Alejandro de Humboldt</h1>
+        <h2>Formulario Completo de Usuario</h2>
+
+        <form action="Ejercicio25.php" method="POST">
+            <fieldset>
+                <legend>Información General</legend>
+                Nombre completo: <input type="text" name="nombre" placeholder="Su nombre" required>
+                <br><br>
+                Correo electrónico: <input type="email" name="correo" placeholder="ejemplo@correo.com" required>
+                <br><br>
+                Ciudad de residencia: <input list="list_ciudad" name="ciudad" placeholder="Selecione su ciudad de residencia">
+    <datalist id="list_ciudad">
+    <option value="Ahuachapán"></option>
+    <option value="San Salvador"></option>
+    <option value="Santa Ana"></option>
+        <option value="San Miguel"></option>
+            <option value="La Paz"></option>
+                <option value="Chalatenango"></option>
+                </datalist>
+                <br><br>        
+            </fieldset>
+            <br><br>
+
+            <input type="submit" value="Enviar Información">
+            <input type="reset" value="Limpiar">
+        </form>
+
+        <a href='index.html'>Regresar al menú principal</a>
+    </body>
+</html>
