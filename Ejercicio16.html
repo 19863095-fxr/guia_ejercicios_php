@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 16 - Salario Empleado</title>
+    </head>
+    <body bgcolor='#292828' text='#FFFFFF'>
+
+        <h1>Complejo Educativo Alejandro de Humboldt</h1>
+        <h2>Cálculo de Salario</h2>
+
+        <form action="Ejercicio16.php" method="POST">
+            <fieldset>
+                <legend>Datos del Empleado y Horas</legend>
+                Nombre del empleado: <input type="text" name="empleado" placeholder="Nombre completo" required>
+                <br><br>
+                Horas trabajadas: <input type="number" name="horas" min="0" placeholder="Ej: 44" required>
+                <br><br>
+                Pago por hora ($): <input type="number" name="pago" min="0" step="0.01" placeholder="Ej: 2.50" required>
+                <br><br>
+            </fieldset>
+            <br><br>
+
+            <input type="submit" value="Calcular Salario">
+            <input type="reset" value="Limpiar">
+        </form>
+
+        <a href='index.html'>Regresar al menú principal</a>
+    </body>
+</html>
